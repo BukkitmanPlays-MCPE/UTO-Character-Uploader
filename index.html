@@ -28,7 +28,18 @@
           </div>
           <div id="form-thingy">
             <div id="header"><img src="http://fontmeme.com/permalink/170518/667502bc0736c5d71e2a3a1da608bb06.png" alt="undertale-logo-font" width="800" border="0"></div>
-            <br />
+            <br /><br />
+
+            Username: <input id="username" />
+            Token: <input id="token" type="password" />
+
+            <br /><br />
+
+            <div class="subheader">Soul Type</div>
+            <input type="radio" name="soul" value="Monster" /> Monster
+            <input type="radio" name="soul" value="Human" /> Human
+
+            <br /><br />
 
             <input type="file" id="character-graphics" />
             <button id="upload" onclick="submit()">Upload Graphics</button>
@@ -37,10 +48,11 @@
             <div clas="header"><br />
               <img src="http://fontmeme.com/permalink/170518/162d999def1ee21f1ad629b1002695dd.png" alt="undertale-logo-font" width="800" border="0">
             </div>
-            <div id="second-half">(Only 2!)</div>
             <ul>
-              <li>No Adult Content</li>
-              <li>No Overused AUs! AUs you have created yourself is ok!</li>
+              <li>No adult content in images</li>
+              <li>No overused AUs! AUs you have created yourself is ok!</li>
+              <li>No images that will hurt/bother other player's eyes</li>
+              <li>No oversized characters! fat characters are fine as long as they are fair sized!</li>
             </ul>
           </div>
         </div>
@@ -50,10 +62,13 @@
            to get information on Undertale Online!
         </div>
         <div id="footer">
-          Original Idea By Toby Fox, Undertale Online by AnimatorGuy, Character Uploader by BukkitmanMC
+          Undertale By Toby Fox, Undertale Online by AnimatorGuy, Character Uploader by BukkitmanMC
         </div>
       </div>
       <script>
+        //GJAPI.iGameID;
+        //GJAPI.sGameKey;
+
         function submit() {
           alert("Character has been submitted!")
         }

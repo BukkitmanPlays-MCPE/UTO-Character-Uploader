@@ -8,7 +8,7 @@ body {
   color: #fff;
   text-align: center;
   font-family: Determination;
-  font-size: 150%;
+  font-size: 120%;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -18,8 +18,9 @@ ul, ol {
 }
 
 button, input {
-  font-size: 110%;
+
   font-family: Determination;
+  font-size: 120%;
   background-color: #000;
   color: #fff;
   border-style: solid;
@@ -38,12 +39,17 @@ a, a:hover, a:visited {
   border-color: #fff;
 }
 
+.subheader {
+  font-size: 140%;
+}
+
 #form-thingy {
   padding: 25px;
 }
 
 #second-half {
   color: #ff0;
+  font-size: 130%;
 }
 
 #footer {
