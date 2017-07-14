@@ -2,10 +2,9 @@
 <html>
     <head>
         <title>UTO Character Uploader</title>
-        <script src="gj-js-api-min.js"></script>
         <link rel="stylesheet" href="style.css" />
     </head>
-    <body>
+    <body onload="updateThing();">
       <div id="container">
         <div id="header"><br />
           <img src="http://fontmeme.com/permalink/170518/ad269ca23ced0603fca734cdf69031e8.png" alt="undertale-logo-font" width="500" border="0"> <div id="second-half">Online</div>
@@ -26,24 +25,14 @@
               <li>After that, you are ready to use your character!</li>
             </ol>
           </div>
-          <div id="form-thingy">
-            <div id="header"><img src="http://fontmeme.com/permalink/170518/667502bc0736c5d71e2a3a1da608bb06.png" alt="undertale-logo-font" width="800" border="0"></div>
+          <applet code="UTO_interface.class" archive="UTOCU.jar" width=840 height=500>
+            "I feel like there is something wrong with your web browser, but I don't know what!"
             <br /><br />
-
-            Username: <input id="username" />
-            Token: <input id="token" type="password" />
-
-            <br /><br />
-
-            <div class="subheader">Soul Type</div>
-            <input type="radio" name="soul" value="Monster" /> Monster
-            <input type="radio" name="soul" value="Human" /> Human
-
-            <br /><br />
-
-            <input type="file" id="character-graphics" />
-            <button id="upload" onclick="submit()">Upload Graphics</button>
-          </div>
+            The point is that, if you are getting this message instead of the character uploader, then for sure, your web browser doesn't work!
+            if you are using Chrome, it will not work, because Java no longer works on Google Chrome, and same with Firefox!, so for that, you will need like an Add-on or something... I recommend IE Tab!
+            If you use Internet Explorer or Safari, then it should work fine! but it might look worse on Internet Explorer... Sorry for the Inconvenience...
+          </applet>
+	  <!-- Pretty much what is wrong is that your web browser either does not support Java Applets, or they are not enabled! -->
           <div id="rules" class="box">
             <div clas="header"><br />
               <img src="http://fontmeme.com/permalink/170518/162d999def1ee21f1ad629b1002695dd.png" alt="undertale-logo-font" width="800" border="0">
@@ -64,22 +53,5 @@
         <div id="footer">
           Undertale By Toby Fox, Undertale Online by AnimatorGuy, Character Uploader by BukkitmanMC
         </div>
-      </div>
-      <script>
-        GJAPI.iGameID = 159395;
-        GJAPI.sGameKey = "4dffca5901d9ee69f5ea175c6c1297d9";
-
-        GJAPI.UserLoginManual("BukkitmanMC", "bkt34", function(pResponse){
-          if(pResponse.success) {
-            console.info("Login successful");
-          }
-        });
-
-        GJAPI.DataStoreSet(GJAPI.DATA_STORE_GLOBAL, "players", "5");
-
-        function submit() {
-          alert("Character has been submitted!")
-        }
-      </script>
     </body>
 </html>

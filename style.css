@@ -17,8 +17,7 @@ ul, ol {
   text-align: left;
 }
 
-button, input {
-
+button, input, label {
   font-family: Determination;
   font-size: 120%;
   background-color: #000;
@@ -26,6 +25,13 @@ button, input {
   border-style: solid;
   border-width: medium;
   border-color: #fff;
+}
+
+label {
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 a, a:hover, a:visited {
